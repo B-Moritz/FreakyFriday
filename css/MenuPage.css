@@ -22,6 +22,11 @@ nav {
   overflow: auto;
 }
 
+.description .col-60 {
+  border-right-style: solid;
+  border-left-color: black;
+}
+
 .description h2, p {
   padding: 20px;
   margin: 0;
@@ -37,6 +42,8 @@ nav {
   background-size: cover;
   height: 150px;
   position: relative;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .supportingImage p {
@@ -50,6 +57,7 @@ nav {
 }
 
 .menuList {
+  padding-top: 50px;
   height: auto;
   overflow: auto;
   padding-left: 50px;
