@@ -150,4 +150,8 @@ header {
   #imgResturant {
     display: none;
   }
+
+  #imgOven {
+    width: 100%;
+  }
 }
