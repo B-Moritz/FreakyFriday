@@ -1,0 +1,148 @@
+
+header {
+  text-align: center;
+  display: none;
+}
+
+.row {
+  height: 500px;
+  background-color: rgba(150, 150, 150, 1);
+  color: white;
+}
+
+.lastRow {
+  height: 320px;
+  background-color: rgba(150, 150, 150, 1);
+}
+
+.openingHours {
+  padding-left: 10px;
+  height: 500px;
+}
+
+.openingHours dl {
+  line-height: 3vw;
+}
+
+.imageContainer {
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+.image {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+
+#imgOven {
+  background: url("C:/Users/b-mor/OneDrive/Documents/GitHub/FreakyFriday/img/pizza-oven-2537308_640.jpg") -200px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+#imgResturant {
+  background: url("C:/Users/b-mor/OneDrive/Documents/GitHub/FreakyFriday/img/bistro-498504_640.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#pageTitle {
+  font-size: 3vw;
+  position: absolute;
+  display: inline-block;
+  background-color: rgba(50, 50, 100, 0.7);
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  left: 30%;
+  top: 320px;
+  box-shadow: 3px 3px 5px black;
+  z-index: 1;
+}
+
+#SiteNavigation {
+  margin-top: 2vw;
+  border-style: dashed;
+  border-color: white;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(100, 100, 100, 1);
+}
+
+.menuItem {
+  font-size: 20px;
+  padding: 15px;
+  width: 100%;
+  margin: 0;
+}
+
+#SiteNavigation:hover {
+  background-color: rgba(200, 200, 200, 1);
+  color: black;
+}
+
+#MenuImage {
+  background: url("C:/Users/b-mor/OneDrive/Documents/GitHub/FreakyFriday/img/menu-3206749_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 190px;
+  margin: 10px;
+}
+
+.menuContainer {
+  position: relative;
+}
+
+.empty {
+  color: rgba(10, 10, 100, 0);
+  height: 320px;
+}
+
+.left-column {
+  border-right-style: solid;
+  border-right-color: black;
+  background-color: rgba(10, 10, 100, 0.3);
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .empty {
+    display: none;
+  }
+  .left-column {
+    border: none;
+  }
+
+  .openingHours {
+    columns: 150px 3;
+    column-rule: 5px double black;
+    column-gap: 20px;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .openingHours dl {
+    line-height: 5vw;
+  }
+
+  header {
+    display: block;
+    padding-top: 1px;
+  }
+
+
+}
