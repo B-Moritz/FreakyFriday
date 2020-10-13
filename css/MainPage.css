@@ -68,7 +68,7 @@ header {
 }
 
 #SiteNavigation {
-  margin-top: 2vw;
+  margin-top: 40px;
   border-style: dashed;
   border-color: white;
   text-decoration: none;
@@ -111,8 +111,6 @@ header {
   background-color: rgba(10, 10, 100, 0.3);
 }
 
-
-
 @media only screen and (max-width: 800px) {
 
   [class*="col-"] {
@@ -145,4 +143,13 @@ header {
   }
 
 
+}
+
+@media only screen and (max-width: 450px) {
+  .imgResturant .refference {
+    display: none;
+  }
+  .imgResturant {
+    display: none;
+  }
 }
