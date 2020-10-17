@@ -1,22 +1,43 @@
+/*
+The integrated development tool for google chrome
+ has been used to test the responsiveness and accessibility of this web page.
+ Chrome developer tools: https://developers.google.com/web/tools/chrome-devtools
+
+ Editor used for this project: Atom (https://atom.io/)
+*/
+
 
 header {
-  text-align: center;
+  background-color: rgba(10, 100, 10, 0.7);
+  margin-bottom: 20px;
 }
 
 header h1 {
   padding: 20px;
-  background-color: rgba(10, 100, 10, 0.7);
   color: white;
-}
-
-nav {
-  padding-left: 20px;
 }
 
 .row {
   width: 100%;
 }
 
+/*Styles for the navigation section*/
+nav {
+  padding-left: 50px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px;
+}
+
+/*End styles for nav*/
+
+
+
+/*Styles for the description of the menu over the tables*/
 .description {
   height: auto;
   overflow: auto;
@@ -27,8 +48,9 @@ nav {
   border-left-color: black;
 }
 
-.description h2, p {
+.description h2, .description p {
   padding: 20px;
+  padding-left: 50px;
   margin: 0;
 }
 
@@ -46,25 +68,30 @@ nav {
   margin-top: 10px;
 }
 
-.supportingImage p {
-  font-size: 10px;
-  padding: 0px;
-}
+/*End styles for description*/
 
-.menuRefference {
-  position: absolute;
-  bottom: 0px;
-}
 
+/*Styles for the expandable menu tables*/
+/*
+The tequnique used for this section is
+expanded/inspired from the example of the
+toggle switch found on the following site:
+
+https://www.w3schools.com/howto/howto_css_switch.asp
+
+The animation with the two lines that rotates ot form an arrow,
+is inspired by the language button form the following page:
+
+https://www.politiet.no/
+ */
 .menuList {
   padding-top: 50px;
   height: auto;
   overflow: auto;
   padding-left: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
 }
 
-/*Tables*/
 
 .menuTable {
   padding: 20px;
@@ -224,4 +251,38 @@ th {
 }
 .menuCheckboxOther:checked + .SubMenuContainer .hiddenSection {
   display: block;
+}
+
+/*References*/
+footer {
+  height: 400px;
+}
+
+#imageReferences {
+  width: 50%;
+  float: left;
+}
+
+#textReferences {
+  width: 50%;
+  float: left;
+}
+
+#textReferences a {
+  line-height: 26px;
+  border-radius: 0 0 0 0;
+}
+
+@media only screen and (max-width: 700px) {
+  #imageReferences {
+    width: 100%;
+  }
+
+  #textReferences {
+    width: 100%;
+  }
+
+  footer {
+    height: 500px;
+  }
 }

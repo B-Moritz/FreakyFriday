@@ -1,6 +1,13 @@
+/*
+The integrated development tool for google chrome
+ has been used to test the responsiveness and accessibility of this web page.
+ Chrome developer tools: https://developers.google.com/web/tools/chrome-devtools
 
+ Editor used for this project: Atom (https://atom.io/)
+*/
+
+/*header is not visible for browser windows wider than 800px*/
 header {
-  text-align: center;
   display: none;
 }
 
@@ -11,19 +18,40 @@ header {
 }
 
 .lastRow {
-  height: 320px;
+  height: 500px;
   background-color: rgba(150, 150, 150, 1);
 }
 
+.empty {
+  color: rgba(10, 10, 100, 0);
+  height: 100%;
+}
+
+.left-column {
+  border-right-style: solid;
+  border-right-color: black;
+  background-color: rgba(10, 100, 10, 0.3);
+}
+
+/*Style for the section containing opening hours.*/
 .openingHours {
-  padding-left: 10px;
-  height: 500px;
+  padding-left: 20px;
+  height: 100%;
+}
+
+.openingHours h2 {
+  font-size: 30px;
 }
 
 .openingHours dl {
   line-height: 3vw;
+  font-size: 20px;
 }
 
+/*End opening hours.*/
+
+
+/*Styles for the title images*/
 .imageContainer {
   height: 100%;
   overflow: auto;
@@ -68,6 +96,10 @@ header {
   z-index: 1;
 }
 
+/*End title*/
+
+
+/*Styles for the navigation section*/
 #SiteNavigation {
   margin-top: 40px;
   border-style: dashed;
@@ -75,6 +107,7 @@ header {
   text-decoration: none;
   color: white;
   background-color: rgba(100, 100, 100, 1);
+  height: 70%;
 }
 
 .lastRow .col-40 {
@@ -82,7 +115,7 @@ header {
   padding-right: 15px;
 }
 
-.menuItem {
+#ourMenu {
   font-size: 20px;
   padding: 15px;
   width: 100%;
@@ -106,18 +139,10 @@ header {
   position: relative;
 }
 
-.empty {
-  color: rgba(10, 10, 100, 0);
-  height: 320px;
-}
+/*End styles for navigation*/
 
-.left-column {
-  border-right-style: solid;
-  border-right-color: black;
-  background-color: rgba(10, 100, 10, 0.3);
-  /*rgba(10, 10, 100, 0.3);*/
-}
 
+/*Styles aplied for browser windows smaler than 800px in the width*/
 @media only screen and (max-width: 800px) {
 
   [class*="col-"] {
@@ -127,14 +152,20 @@ header {
   .empty {
     display: none;
   }
+  
   .left-column {
     border: none;
   }
 
+  .lastRow {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
   .openingHours {
     columns: 150px 3;
-    column-rule: 5px double black;
-    column-gap: 20px;
+    column-rule: 5px double rgba(200, 200, 200, 1);
+    column-gap: 40px;
     height: auto;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -145,15 +176,21 @@ header {
   }
 
   header {
-    display: block;
+    display: flex;
     padding-top: 1px;
   }
 }
 
+/*End styles for small screen*/
+
+
+/*Styles for mobile devices (browser width not larger than 450px)*/
 @media only screen and (max-width: 450px) {
-  #imgResturant p {
+
+  #imgRestaurantRef {
     display: none;
   }
+
   #imgResturant {
     display: none;
   }
@@ -162,3 +199,5 @@ header {
     width: 100%;
   }
 }
+
+/*End styles for mobile devices*/
