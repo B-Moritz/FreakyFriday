@@ -9,13 +9,13 @@
 </head>
 <body>
   <div id="PageContainer">
-  <header>
+  <header role="banner">
     <h1>Pizza Pronto</h1>
   </header>
-  <article>
+  <article role="article">
     <div class="row">
       <div class="col-20 openingHours left-column">
-        <h2>Opening Hours<h2>
+        <h2>Opening Hours</h2>
         <dl>
           <dt>Thuseday - Friday:</dt>
             <dd>12:00 - 22:00</dd>
@@ -26,26 +26,41 @@
         </dl>
       </div>
       <div class="col-80 imageContainer">
-        <h1 id="pageTitle">Pizza Pronto</h1>
-        <div id="imgOven" class="image">
-          <p class="refference">Image by <a href="https://pixabay.com/users/tcameliastoian-4634221/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2537308">tcameliastoian</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2537308">Pixabay</a></p>
+        <h1 role="banner" id="pageTitle">Pizza Pronto</h1>
+        <div role="img" aria-label="Photo: pizza inside a pizza oven" id="imgOven" class="image">
         </div>
-        <div id="imgResturant" class="image">
-          <p class="refference">Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2802332">Engin Akyurt</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2802332">Pixabay</a></p>
+        <div role="img" aria-label="Photo: front of the restaurant with chairs and tables" id="imgResturant" class="image">
         </div>
       </div>
     </div>
     <div class="lastRow">
       <div class="col-20 empty left-column"></div>
-      <div class="col-40">
-        <a id="SiteNavigation" class="col-100" href="./MenuPage.html">
-          <p class="menuItem">Our menu for today</p>
-          <div id="MenuImage"></div>
+      <div role="navigation" class="col-40">
+        <a role="link" aria-labelledby="#ourMenu" id="SiteNavigation" class="col-100" href="./MenuPage.html">
+          <p id="ourMenu">Our menu for today</p>
+          <div role="img" id="MenuImage"></div>
         </a>
-        <p class="menuRefference">Image by <a href="https://pixabay.com/users/darkmoonart_de-1664300/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3206749">DarkmoonArt_de</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3206749">Pixabay</a></p>
       </div>
     </div>
   </article>
+  <footer role="contentinfo">
+    <h2>Image references</h2>
+    <ul>
+      <li id="imgRestaurantRef">The photo of a pizza in an oven by
+        <a href="https://pixabay.com/users/tcameliastoian-4634221/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2537308">tcameliastoian</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2537308">
+          Pixabay</a>
+      </li>
+      <li>The photo of a restaurant with tables and chairs by
+        <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2802332">Engin Akyurt</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2802332">
+        Pixabay</a>
+      </li>
+      <li>
+        The photo of a menu board and ingredients by
+        <a href="https://pixabay.com/users/darkmoonart_de-1664300/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3206749">DarkmoonArt_de</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3206749">
+        Pixabay</a>
+      </li>
+    </ul>
+  </footer>
   </div>
 </body>
 </html>

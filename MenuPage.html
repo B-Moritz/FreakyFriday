@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pizza Pronto: Our Menue</title>
+  <title>Pizza Pronto: Our Menu</title>
   <link rel="stylesheet" type="text/css" href="css/CommonStyles.css">
   <link rel="stylesheet" type="text/css" href="css/MenuPage.css">
 </head>
 <body>
   <div id="PageContainer">
-    <header>
+    <header role="banner">
       <h1>Pizza Pronto: Our Menu</h1>
     </header>
-    <nav>
-      <a href="./index.html">Back to Main Page</a>
+    <nav role="navigation">
+      <a role="link" href="./index.html">Back to Main Page</a>
     </nav>
-    <article>
+    <article role="article">
       <div class="row description">
         <div class="col-60">
           <h2>An original menu</h2>
@@ -23,8 +23,7 @@
              We can also offer dishes like gnocchi or calzone.
           </p>
         </div>
-        <div class="supportingImage col-30">
-          <p class="menuRefference">Image by <a href="https://pixabay.com/users/daria-yakovleva-3938704/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2000600">Дарья Яковлева</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2000600">Pixabay</a></p>
+        <div role="img" aria-label="Photo: A pizza with olives and rucola" class="supportingImage col-30">
         </div>
       </div>
       <div class="row menuList">
@@ -160,6 +159,25 @@
         </div>
       </div>
     </article>
+    <footer role="contentinfo">
+      <div id="imageReferences">
+        <h2>Image references</h2>
+        <ul>
+          <li>The image depicting a pizza with olives and rucola is made by
+            <a href="https://pixabay.com/users/daria-yakovleva-3938704/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2000600">Дарья Яковлева</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2000600">
+            Pixabay</a>
+          </li>
+        </ul>
+      </div>
+      <div id="textReferences">
+        <h2>Text refferences</h2>
+        <dl>
+          <dt>The menu on this page consists dishes that are inspired of the content from the following pages:</dt>
+            <dd><a href="https://www.samuirestaurantguide.com/a-list-of-the-most-popular-italian-pizzas/">https://www.samuirestaurantguide.com/a-list-of-the-most-popular-italian-pizzas/</a><dd>
+            <dd><a href="https://www.seasonsandsuppers.ca/easy-calzones-two-ways-many/">https://www.seasonsandsuppers.ca/easy-calzones-two-ways-many/</a></dd>
+        </dl>
+    </div>
+    </footer>
   </div>
 </body>
 </html>
