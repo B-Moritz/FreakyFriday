@@ -187,6 +187,13 @@ th {
   color: white;
 }
 
+
+/*
+In order to add the possibiliti to tab trough the menu with tab and spacebar, I used tabindex and :focus.
+This is inspired by the examples on the following site:
+
+https://web.dev/logical-tab-order/?utm_source=lighthouse&utm_medium=devtools
+*/
 input[type="checkbox"] {
   width: 100px;
   height: 10px;
