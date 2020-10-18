@@ -112,8 +112,6 @@ th {
   text-align: right;
 }
 
-/*Checkbox method:*/
-
 .listContainer {
   background-color: rgba(200, 200, 200, 1);
   position: relative;
@@ -189,6 +187,18 @@ th {
   color: white;
 }
 
+input[type="checkbox"] {
+  width: 100px;
+  height: 10px;
+  z-index: 1;
+  opacity: 0;
+}
+
+input[type="checkbox"]:focus + .SubMenuContainer {
+  border-style: solid;
+  border-color: black;
+}
+
 
 /*Thick Crust*/
 .menuCheckboxThickCrust:checked + .SubMenuContainer .leftLine {
@@ -199,7 +209,6 @@ th {
 }
 .menuCheckboxThickCrust {
   position: absolute;
-  opacity: 0;
 }
 .menuCheckboxThickCrust:checked + .SubMenuContainer .hiddenSection {
   display: block;
@@ -215,7 +224,6 @@ th {
 }
 .menuCheckboxThinCrust {
   position: absolute;
-  opacity: 0;
 }
 .menuCheckboxThinCrust:checked + .SubMenuContainer .hiddenSection {
   display: block;
@@ -231,7 +239,6 @@ th {
 }
 .menuCheckboxCalzone {
   position: absolute;
-  opacity: 0;
 }
 .menuCheckboxCalzone:checked + .SubMenuContainer .hiddenSection {
   display: block;
@@ -247,7 +254,6 @@ th {
 }
 .menuCheckboxOther {
   position: absolute;
-  opacity: 0;
 }
 .menuCheckboxOther:checked + .SubMenuContainer .hiddenSection {
   display: block;
